@@ -129,7 +129,7 @@ class _CameraExampleHomeState extends State<CameraExampleHome>
     }
     final CameraController cameraController = CameraController(
       cameraDescription,
-      ResolutionPreset.medium,
+      ResolutionPreset.low,
     );
 
     controller = cameraController;
@@ -186,7 +186,7 @@ class _CameraExampleHomeState extends State<CameraExampleHome>
                   imageHeight: img.height,
                   imageWidth: img.width,
                   numResults: 2,
-                  threshold: 0.6,
+                  threshold: 0.9,
                   imageMean: 127.5,
                   imageStd: 127.5,
                 ).then(
